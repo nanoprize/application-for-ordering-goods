@@ -1,0 +1,43 @@
+﻿<Window x:Class="ФорвестWhere.Новый_заказ"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ФорвестWhere"
+        mc:Ignorable="d"
+        Title="Новый_заказ" Height="450" Width="423.067">
+    <Grid Background="#FFFFC67A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="make_zakaz" Content="Сделать заказ" HorizontalAlignment="Left" Margin="147,311,0,0" VerticalAlignment="Top" Width="138" Height="28" Click="make_zakaz_Click" FontSize="16" BorderBrush="#FFC6862F" Background="#FFC6862F" FontFamily="Trebuchet MS"/>
+        <TextBox x:Name="vid_dostavki" HorizontalAlignment="Left" Height="23" Margin="112,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Background="#FFFDE5C6"/>
+        <ComboBox x:Name="spisok_tovarov" SelectedItem="{Binding Товары_магазина}" DisplayMemberPath="название" HorizontalAlignment="Left" Margin="112,184,0,0" VerticalAlignment="Top" Width="204">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFFDE5C6" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="spisok_fio" SelectedItem="{Binding Клиенты_магазина}" DisplayMemberPath="ФИО" HorizontalAlignment="Left" Margin="112,107,0,0" VerticalAlignment="Top" Width="204" BorderBrush="#FFFDE5C6">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFFDE5C6" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="183,81,0,0" TextWrapping="Wrap" Text="Ваше ФИО" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="164,158,0,0" TextWrapping="Wrap" Text="Нужный товар" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="164,217,0,0" TextWrapping="Wrap" Text="Вид доставки" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="112,266,0,0" TextWrapping="Wrap" Text="самовывоз/доставка(курьером)" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="nazad_button" Content="" HorizontalAlignment="Left" Margin="341,345,0,0" VerticalAlignment="Top" Width="64" Height="64" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="nazad_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="icons8-широкая-стрелка-вправо-64.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="137,25,0,0" TextWrapping="Wrap" Text="Оформление" VerticalAlignment="Top" FontSize="24" FontFamily="Bodoni MT Black"/>
+
+    </Grid>
+</Window>

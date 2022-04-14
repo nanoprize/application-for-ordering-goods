@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{092CE3C6-B400-44A5-B918-1C7DF6313340}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ФорвестWhere</RootNamespace>
+    <AssemblyName>ФорвестWhere</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hygiene_tap_icon_134409.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="adminorsimple.xaml.cs">
+      <DependentUpon>adminorsimple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="MAIN.xaml.cs">
+      <DependentUpon>MAIN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model1q.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1q.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1q.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1q.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1q.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1q.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="seeTovary.xaml.cs">
+      <DependentUpon>seeTovary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="workZakazy.xaml.cs">
+      <DependentUpon>workZakazy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Авторизация.xaml.cs">
+      <DependentUpon>Авторизация.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ведение_заказов.cs">
+      <DependentUpon>Model1q.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Заказы1.xaml.cs">
+      <DependentUpon>Заказы1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Заказы2.xaml.cs">
+      <DependentUpon>Заказы2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Клиенты.xaml.cs">
+      <DependentUpon>Клиенты.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Клиенты_магазина.cs">
+      <DependentUpon>Model1q.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Новый_заказ.xaml.cs">
+      <DependentUpon>Новый_заказ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Пользователи.cs">
+      <DependentUpon>Model1q.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Товары.xaml.cs">
+      <DependentUpon>Товары.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Товары_магазина.cs">
+      <DependentUpon>Model1q.tt</DependentUpon>
+    </Compile>
+    <Page Include="adminorsimple.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MAIN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="seeTovary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="workZakazy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Авторизация.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Заказы1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Заказы2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Клиенты.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Новый_заказ.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Товары.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1q.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1q.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1q.edmx.diagram">
+      <DependentUpon>Model1q.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="й.jpg" />
+    <Resource Include="icons8-ок-64.png" />
+    <Resource Include="footbal_icon-icons.com_53569.ico" />
+    <Resource Include="hygiene_tap_icon_134409.ico" />
+    <Resource Include="client_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pexels-cottonbro-5473307.jpg" />
+    <Resource Include="icons8-широкая-стрелка-вправо-64.png" />
+    <Resource Include="icons8-ок-60.png" />
+    <Resource Include="pexels-karolina-grabowska-4498136.jpg" />
+    <Resource Include="pexels-cottonbro-4554243.jpg" />
+    <Resource Include="pexels-pavel-danilyuk-6407446.jpg" />
+    <Resource Include="аааааааааа.png" />
+    <Resource Include="форвеееест.png" />
+    <Resource Include="форвест.png" />
+    <Resource Include="логотип форвест.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-корзина-80.png" />
+    <Resource Include="icons8-поиск-160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-водопровод-100.png" />
+    <Content Include="Model1q.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1q.edmx</DependentUpon>
+      <LastGenOutput>Model1q.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1q.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1q.edmx</DependentUpon>
+      <LastGenOutput>Model1q.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

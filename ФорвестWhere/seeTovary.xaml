@@ -1,0 +1,45 @@
+﻿<Window x:Class="ФорвестWhere.seeTovary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ФорвестWhere"
+        mc:Ignorable="d"
+        Title="Товары" Height="450" Width="800">
+    <Grid Background="#FFFFC67A">
+        <DataGrid x:Name="list_tovarov"  AutoGenerateColumns="False" HorizontalAlignment="Left" Height="333" Margin="100,58,0,0" VerticalAlignment="Top" Width="604" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding название}" Width="150"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding цена}" Width="150"/>
+                <DataGridTextColumn Header="Наличие" Binding="{Binding наличие}" Width="150"/>
+                <DataGridTemplateColumn Header="Изображение" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding фото}" Width="100" Height="120"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Image HorizontalAlignment="Left" Height="37" Margin="609,6,0,0" VerticalAlignment="Top" Width="171" Source="аааааааааа.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.367"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.193"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="аааааааааа.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Margin="29,10,0,0" TextWrapping="Wrap" Text="Товары" VerticalAlignment="Top" FontSize="24" FontFamily="Bodoni MT Black"/>
+        <Button x:Name="nazad_button" Content="" HorizontalAlignment="Left" Margin="743,370,0,0" VerticalAlignment="Top" Width="39" Height="39" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="nazad_button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="icons8-широкая-стрелка-вправо-64.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

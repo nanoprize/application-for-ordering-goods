@@ -8,12 +8,6 @@
 
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/46bafb6f-9745-4ca0-8471-f2fd45ff8e37)
 
-
-
-
-
-Главная страница 
-
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/4ce658cc-187c-4c27-ad08-dcd7b929d4d4)
 
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/011a62e5-bb6c-43dc-aa37-f0fda39548bd)

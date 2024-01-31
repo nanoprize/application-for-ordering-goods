@@ -2,7 +2,8 @@
 
 Окно авторизации:
 
-![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/9281d431-eae9-4b8f-8ff5-30fa41b32220)
+![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/f95b3d7a-1af7-4647-b729-a0bfcef3ebb4)
+
 
 Главная страница 
 

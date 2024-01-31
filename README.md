@@ -1,4 +1,5 @@
 Приложение для заказа запчастей
+
 Окно авторизации:
 
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/9281d431-eae9-4b8f-8ff5-30fa41b32220)

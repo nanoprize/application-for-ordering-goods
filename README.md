@@ -21,6 +21,11 @@
 
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/40ce6d9e-c171-4325-b5d7-ef687ead1786)
 
+Модель базы данных 
+
+<img width="784" alt="image" src="https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/fe179f7b-9742-4178-a593-0c9f77a2750c">
+
+
 
 Разработка данного приложения для Android
 

@@ -8,7 +8,7 @@
 
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/46bafb6f-9745-4ca0-8471-f2fd45ff8e37)
 
-![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/86c94155-1f4c-4c2f-89d7-0500bfbabeda)
+
 
 
 

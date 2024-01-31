@@ -16,13 +16,17 @@
 
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/4ce658cc-187c-4c27-ad08-dcd7b929d4d4)
 
+![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/011a62e5-bb6c-43dc-aa37-f0fda39548bd)
+
+
 ![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/f8412995-80d9-48fc-9985-93fb6a533399)
 
+![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/ce77f0da-0d66-4916-af4a-3148653f498a)
 
-Изображения товаров
-Добавление и удаление товаров во втором окне
+![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/85eb25f7-55f6-4e4d-af51-45be0321469a)
 
-![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/21fdf846-e9bc-47f6-8f1f-d3ba1b2d9bc2)
+![image](https://github.com/nanoprize/application-for-ordering-goods/assets/54024983/40ce6d9e-c171-4325-b5d7-ef687ead1786)
+
 
 Разработка данного приложения для Android
 
